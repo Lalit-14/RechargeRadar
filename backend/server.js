@@ -10,18 +10,40 @@ app.use(cors());
 app.use(express.json());
 
 mongoose.connect("mongodb+srv://aadi:mongopass123@cluster0.lwjxmia.mongodb.net/RechargeRadar?retryWrites=true&w=majority")
-.then(() => console.log("Connected to MongoDB"))
-.catch(err => console.error("Error connecting to MongoDB:", err));
+  .then(() => console.log("Connected to MongoDB"))
+  .catch(err => console.error("Error connecting to MongoDB:", err));
 
 const userSchema = new mongoose.Schema({
   name: String,
   phone: String,
-  username: {type:String, unique: true},
+  username: { type: String, unique: true },
   password: String,
   email: { type: String, unique: true },
 });
 
 const User = mongoose.model('User', userSchema, 'Users');
+
+const stationSchema = new mongoose.Schema({
+  area: String,
+  name: String,
+  address: String,
+  contact: String,
+  location: {
+    type: {
+      type: String,
+      enum: ['Point'],
+      required: true
+    },
+    coordinates: {
+      type: [Number],
+      required: true
+    }
+  },
+  image: String,
+  logo: String
+});
+
+const Station = mongoose.model('Station', stationSchema, 'stations');
 
 app.use(session({
   secret: 'secretkey',
@@ -79,6 +101,16 @@ app.post('/logout', (req, res) => {
     }
     res.status(200).json({ message: 'Logged out successfully' });
   });
+});
+
+app.get('/stations', async (req, res) => {
+  try {
+    const stations = await Station.find().exec();
+    res.status(200).json(stations);
+  } catch (error) {
+    console.error('Error fetching stations:', error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
 });
 
 app.listen(port, () => {

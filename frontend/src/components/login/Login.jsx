@@ -29,17 +29,18 @@ const Login = () => {
 
   return (
     <div className='container'>
-      <div className='left'>
-        <div className='logo'>
-          <a href='/'><img src='./assets/logo.png' alt='logo' /></a>
+        <div className='left'>
+            <div className='logo'>
+                <a href='/'><img src='./assets/logo.png' alt='logo' /></a>
+            </div>
+            <div className='welcome'>
+                <p>Recharge</p>
+                <p>Radar</p>
+            </div>
+            <p1 className='tagline'>Recharge. Rejuvenate. Radiate.</p1>
         </div>
-        <div className='welcome'>
-          <p>Recharge</p>
-          <p>Radar</p>
-        </div>
-      </div>
       <div className='vertical' />
-      <form className='sign-in' onSubmit={handleSignIn}>
+      <form className='Sign-in' onSubmit={handleSignIn}>
         <div className='user'>
           <label htmlFor='email'>Email</label>
           <input
@@ -58,8 +59,8 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           {error && <div style={{ color: 'red' }}>{error}</div>}
-          <div className='sign-in'>
-            <button id="sign-in" className='button' type='submit'>Login</button>
+          <div className='Sign-in'>
+            <button id="Sign in" className='button' type='submit'>Login</button>
             <p>Don’t have an account? You can</p>
             <a href='/signup'><p> sign up here</p></a>
           </div>

@@ -1,10 +1,10 @@
-// import "./navbar.css"
+import "./navbar.css"
 
 const Navbar = () => {
   return (
     <div className='navbar_container'>
         <div className='title'>
-            <p>Release</p>
+            <p>Recharge</p>
             <p>Radar</p>
         </div>
         <div className='nav_links'>

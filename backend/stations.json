@@ -1,0 +1,183 @@
+[
+    {
+      "area": "Jubilee Hills",
+      "name": "Daspalla Hotels",
+      "address": "Rd Number 37, CBI Colony, Jubilee Hills, Hyderabad, Telangana 500033",
+      "contact": "",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.437396835217772, 78.39830076809294]
+      },
+      "image":"1.jpg",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Jubilee Hills",
+      "name": "The Moonshine Project Restaurant",
+      "address": "385, Road Number 82, Film Nagar, Jubilee Hills, Hyderabad, Telangana",
+      "contact": "+91 91009 00886",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.41438550269109, 78.40767502391513]
+      },
+      "image":"station.jpeg",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Jubilee Hills",
+      "name": "MG Hyderabad Jubilee Hills",
+      "address": "8-2-120/86, 10A, opposite Hotel Park Hyatt, Rd No. 2, Banjara Hills, Hyderabad, Telangana 500033",
+      "contact": "+91 91000 68686",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.424326902681905, 78.43059468746083]
+      },
+      "image":"8.jpg",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Gachibowli",
+      "name": "Waverock, Virtusa Polaris",
+      "address": "Financial District, Nanakaramguda, Hyderabad, Telangana 500032",
+      "contact": "+91 40 6787 0000",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.418646051944094, 78.34747151411794]
+      },
+      "image":"charging.png",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Gachibowli",
+      "name": "Sohini Tech Park",
+      "address": "Nanakramguda Road, Financial District, Gachibowli, Hyderabad, Telangana 500032",
+      "contact": "+91 40 3000 3000",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.423018345065525, 78.34794845773908]
+      },
+      "image":"neon.jpeg",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Gachibowli",
+      "name": "Heart Cup Coffee",
+      "address": "Old Mumbai Hwy, next to HP Petrol Pump (Venkatadri Fuel Point), FCI Employees Cooperative Housing Society, Indira Nagar, Gachibowli, Hyderabad, Telangana",
+      "contact": "+91 99899 22233",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.44551011356914, 78.35586694110584]
+      },
+      "image":"green.webp",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Begumpet",
+      "name": "HMR Begumpet",
+      "address": "7-1-22/A, Begumpet Flyover, Leelanagar, Ameerpet, Hyderabad, Telangana 500016",
+      "contact": "+91 40 2770 1234",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.43701183454821, 78.45499910949275]
+      },
+      "image":"4.jpg",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Begumpet",
+      "name": "IOC Begumpet",
+      "address": "Begumpet, Hyderabad, Telangana 500016",
+      "contact": "+91 40 2340 0999",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.444635325632152, 78.46205721193365]
+      },
+      "image":"9.jpeg",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Begumpet",
+      "name": "Hotel Marigold",
+      "address": "Ameerpet Rd, Leela Nagar, Begumpet, Hyderabad, Telangana 500016",
+      "contact": "+91 40 6736 9999",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.43793127786417, 78.45510533476089]
+      },
+      "image":"10.jpeg",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Hitech City",
+      "name": "Tata Charging Station - Tejaswi Motors",
+      "address": "Hitech City Main Rd, Ayyappa Society, Siddhi Vinayak Nagar, Kothaguda, Hyderabad, Telangana 500081",
+      "contact": "1800 209 8282",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.454140501457704, 78.38511330473978]
+      },
+      "image":"hyun.avif",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Hitech City",
+      "name": "Hitech City Next Galleria Mall Parking",
+      "address": "Level B1, Hitech City, Next Galleria Mall, Hyderabad, Telangana",
+      "contact": "+91 40 4850 0111",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.44813097548204, 78.38453410072067]
+      },
+      "image":"clean.jpeg",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Hitech City",
+      "name": "Ather Space Hyderabad",
+      "address": "Plot No. 1 & 2, Survey No - 64P, Rohini Layout, Opp Shilparamam, Hitech City, Madhapur, Hyderabad, Telangana",
+      "contact": "+91 76766 00900",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.45293244223992, 78.38050997178968]
+      },
+      "image":"green.webp",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Miyapur",
+      "name": "PGCIL Electric Vehicles Charging Station",
+      "address": "Nadigada Tanda, Miyapur, Hyderabad, Telangana 500049",
+      "contact": "+91 40 2304 5151",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.4984638015376, 78.3813097914914]
+      },
+      "image":"3.jpeg",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Miyapur",
+      "name": "Miyapur Metro Parking",
+      "address": "Nadigada Tanda, Miyapur, Hyderabad, Telangana 500049",
+      "contact": "+91 40 2340 0699",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.496931203672435, 78.37111630329802]
+      },
+      "image":"5.jpg",
+      "logo":"6.webp"
+    },
+    {
+      "area": "Miyapur",
+      "name": "Charge And Drive Charging Station",
+      "address": "Survey No. 98, Miyapur Main Rd, Madeenaguda, Hyderabad, Telangana 500133",
+      "contact": "+46 20 46 00 46",
+      "location": {
+        "type": "Point",
+        "coordinates": [17.495069469417185, 78.33650363925875]
+      },
+      "image":"station.jpeg",
+      "logo":"6.webp"
+    }
+  ]
+  
