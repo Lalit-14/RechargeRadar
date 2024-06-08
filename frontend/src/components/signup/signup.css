@@ -1,0 +1,62 @@
+.signup-container h1 {
+    font-family: 'Roboto';
+    font-size: 60px;
+    font-weight: 600;
+    color: #060F15;
+    text-align: left;
+    margin-top: -20px;
+    margin-left: -50px;
+    margin-bottom: 80px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-left: -100px;
+}
+
+.label {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 23px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    top: -30px;
+    position: relative;
+}
+
+.textbox {
+    font-family: 'Roboto';
+    font-weight: 600;
+    width: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 30px; 
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #D9D9D9;
+    margin-top: 40px;
+    top: -20px;
+    position: relative;
+}
+.submit{
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #4B9B67;
+    color: #FFFFFF;
+    margin-left: -500px;
+}
