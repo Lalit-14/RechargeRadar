@@ -2,7 +2,7 @@
     font-family: 'Roboto';
     font-size: 60px;
     font-weight: 600;
-    color: #060F15;
+    color: #2B4F5B;
     text-align: left;
     margin-top: -20px;
     margin-left: -50px;
@@ -20,8 +20,8 @@
 .form-item {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    margin-left: -100px;
+    align-content: center;
+    /* margin-left: -100px; */
 }
 
 .label {
@@ -58,5 +58,5 @@
     border: none;
     background-color: #4B9B67;
     color: #FFFFFF;
-    margin-left: -500px;
+    /* margin-left: -500px; */
 }
