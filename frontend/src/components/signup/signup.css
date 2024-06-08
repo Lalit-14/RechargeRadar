@@ -1,8 +1,8 @@
 .signup-container h1 {
-    font-family: 'Roboto';
+    font-family: 'Electrolize';
     font-size: 60px;
     font-weight: 600;
-    color: #2B4F5B;
+    color: #FFFFFF;
     text-align: left;
     margin-top: -20px;
     margin-left: -50px;
@@ -56,7 +56,7 @@
     height: 50px;
     border-radius: 15px;
     border: none;
-    background-color: #4B9B67;
+    background-color: #254EBA;
     color: #FFFFFF;
     /* margin-left: -500px; */
 }
