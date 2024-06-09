@@ -11,7 +11,7 @@ const Navbar = () => {
             <a href='/dash'>Find a Charger</a>
             <a href='/admin'>For Business</a>
             <a href='/contact-us'>Contact Us</a>
-            <a href='/book'>Book</a>
+            <a href='/login'>Book</a>
         </div>
     </div>
   )

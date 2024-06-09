@@ -40,7 +40,7 @@ const Dash = () => {
   return (
     <div className='dash_container'>
         <div className='nav'>
-            {/* <Navbar /> */}
+            <Navbar />
         </div>
         <div className="search-container">
           <input 
@@ -57,13 +57,14 @@ const Dash = () => {
           </datalist>
           <button onClick={handleSearchSubmit}>Search</button>
         </div>
+        <div className='data'>
       {filteredData.map((card, idx) => (
         <div key={idx} className='card' onClick={() => handleCardClick(card)}>
           <img src={`/assets/${card.logo}`} alt={card.name} />
           <h2>{card.name}</h2>
           <p>{card.area}</p>
         </div>
-      ))}
+      ))}</div>
       {showModal && (
         <Popup onClose={() => setShowModal(false)} data={selectedCard}/>
       )}
