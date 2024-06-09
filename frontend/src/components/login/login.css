@@ -75,6 +75,9 @@ label {
     box-sizing: border-box;
     background-color: #D9D9D9;
 }
+.Sign-in a{
+    text-decoration: none;
+}
 
 .Sign-in .button {
     padding: 10px 30px;
@@ -86,4 +89,12 @@ label {
     color: #FFFFFF;
     background-color: #254EBA;
     margin-left: -30%;
+}
+.Sign-in p{
+    font-family: 'Arsenal';
+    color: #FFFFFF;
+    font-size: 25px;
+    line-height: 0.2;
+    margin-left: -20;
+    cursor: pointer;
 }

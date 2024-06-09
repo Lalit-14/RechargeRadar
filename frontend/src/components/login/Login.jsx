@@ -61,7 +61,7 @@ const Login = () => {
           {error && <div style={{ color: 'red' }}>{error}</div>}
           <div className='Sign-in'>
             <button id="Sign in" className='button' type='submit'>Login</button>
-            <p>Don’t have an account? You can</p>
+            <p>Don’t have an account? You can </p>
             <a href='/signup'><p> sign up here</p></a>
           </div>
         </div>
