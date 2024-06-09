@@ -113,6 +113,51 @@ app.get('/stations', async (req, res) => {
   }
 });
 
+
+app.post('/stations', async (req, res) => {
+    const { area, name, address, contact, location, image, logo } = req.body;
+  
+    try {
+      const newStation = new Station({ area, name, address, contact, location, image, logo });
+      await newStation.save();
+  
+      res.status(200).json({ message: 'Station created successfully' });
+    } catch (error) {
+      console.error('Error creating station:', error);
+      res.status(500).json({ message: 'Internal server error' });
+    }
+  });
+  
+
+  app.put('/stations/:id', async (req, res) => {
+    const { id } = req.params;
+    const { area, name, address, contact, location, image, logo } = req.body;
+  
+    try {
+      await Station.findByIdAndUpdate(id, { area, name, address, contact, location, image, logo });
+  
+      res.status(200).json({ message: 'Station updated successfully' });
+    } catch (error) {
+      console.error('Error updating station:', error);
+      res.status(500).json({ message: 'Internal server error' });
+    }
+  });
+  
+  
+  app.delete('/stations/:id', async (req, res) => {
+    const { id } = req.params;
+  
+    try {
+      await Station.findByIdAndDelete(id);
+  
+      res.status(200).json({ message: 'Station deleted successfully' });
+    } catch (error) {
+      console.error('Error deleting station:', error);
+      res.status(500).json({ message: 'Internal server error' });
+    }
+  });
+  
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

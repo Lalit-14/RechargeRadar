@@ -23,6 +23,11 @@ body{
     flex-grow: 1;
     line-height: 0.2;
     text-align: left;
+    text-decoration:none;
+  }
+  .title a {
+    text-decoration:none;
+    color:white;
   }
   
   .nav_links {
