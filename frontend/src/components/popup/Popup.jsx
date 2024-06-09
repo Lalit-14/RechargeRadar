@@ -1,7 +1,12 @@
 import React from "react";
 import "./popup.css";
+import { useNavigate } from 'react-router-dom'
 
 const Popup = ({ onClose, data }) => {
+  const navigate = useNavigate();
+  const handleBook=()=>{
+    navigate('/book',{state:{station:data}});
+  }
   return (
     <div className="popup-container">
       <div className="popup-box">
@@ -12,6 +17,7 @@ const Popup = ({ onClose, data }) => {
           <p>Address: {data.address}</p>
           <p>Contact: {data.contact}</p>
         </div>
+        <button onClick={handleBook}>Book</button>
         <button onClick={onClose}>Close</button>
       </div>
     </div>

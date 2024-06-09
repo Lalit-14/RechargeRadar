@@ -24,24 +24,30 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model('User', userSchema, 'Users');
 
 const stationSchema = new mongoose.Schema({
-  area: String,
-  name: String,
-  address: String,
-  contact: String,
-  location: {
-    type: {
-      type: String,
-      enum: ['Point'],
-      required: true
+    area: String,
+    name: String,
+    address: String,
+    contact: String,
+    location: {
+      type: {
+        type: String,
+        enum: ['Point'],
+        required: true
+      },
+      coordinates: {
+        type: [Number],
+        required: true
+      }
     },
-    coordinates: {
-      type: [Number],
-      required: true
-    }
-  },
-  image: String,
-  logo: String
-});
+    image: String,
+    logo: String,
+    slots: [{
+      startTime: String,
+      endTime: String,
+      isBooked: { type: Boolean, default: false }
+    }]
+  });
+  
 
 const Station = mongoose.model('Station', stationSchema, 'stations');
 
@@ -156,6 +162,35 @@ app.post('/stations', async (req, res) => {
       res.status(500).json({ message: 'Internal server error' });
     }
   });
+
+  app.post('/bookSlot', async (req, res) => {
+    const { stationId, slotId } = req.body;
+  
+    try {
+      const station = await Station.findById(stationId);
+      if (!station) {
+        return res.status(404).json({ message: 'Station not found' });
+      }
+  
+      const slot = station.slots.id(slotId);
+      if (!slot) {
+        return res.status(404).json({ message: 'Slot not found' });
+      }
+  
+      if (slot.isBooked) {
+        return res.status(400).json({ message: 'Slot already booked' });
+      }
+  
+      slot.isBooked = true;
+      await station.save();
+  
+      res.status(200).json({ message: 'Slot booked successfully' });
+    } catch (error) {
+      console.error('Error booking slot:', error);
+      res.status(500).json({ message: 'Internal server error' });
+    }
+  });
+  
   
 
 app.listen(port, () => {
