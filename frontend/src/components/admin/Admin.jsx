@@ -68,7 +68,6 @@ const Admin = () => {
     <div className='admin_container'>
       <h1>Admin Page</h1>
 
-      {/* Form to add new station */}
       <form onSubmit={handleFormSubmit} className='form_container'>
         <input type='text' name='area' placeholder='Area' value={formData.area} onChange={handleInputChange} required />
         <input type='text' name='name' placeholder='Name' value={formData.name} onChange={handleInputChange} required />
@@ -78,15 +77,12 @@ const Admin = () => {
         <input type='text' name='logo' placeholder='Logo URL' value={formData.logo} onChange={handleInputChange} required />
         <button type='submit'>Add Station</button>
       </form>
-
-      {/* Display existing stations */}
       <div className='stations_container'>
         {stations.map((station) => (
           <div key={station._id} className='station_card'>
             <p><strong>{station.name}</strong></p>
             <p>{station.area}</p>
             <button onClick={() => handleDeleteStation(station._id)}>Delete</button>
-            {/* Add update functionality here */}
           </div>
         ))}
       </div>

@@ -16,7 +16,7 @@ const Map = () => {
   return (
     <LoadScript googleMapsApiKey="AIzaSyBjUcM5mgA2y7eXso4V2Ar8QciVRP8VLHs">
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
-        {/* No markers, just the map */}
+
       </GoogleMap>
     </LoadScript>
   );

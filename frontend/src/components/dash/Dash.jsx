@@ -40,7 +40,6 @@ const Dash = () => {
     navigate("/chargers")
   }
 
-  // Extract unique area names for datalist
   const uniqueAreaNames = [...new Set(data.map(station => station.area))];
 
   return (

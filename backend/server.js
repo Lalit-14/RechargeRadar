@@ -56,7 +56,7 @@ app.use(session({
   secret: 'secretkey',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: false }  // Set secure: true in production with HTTPS
+  cookie: { secure: false } 
 }));
 
 app.post('/register', async (req, res) => {
