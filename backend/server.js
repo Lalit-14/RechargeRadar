@@ -41,12 +41,13 @@ const stationSchema = new mongoose.Schema({
     },
     image: String,
     logo: String,
+    status: String,
     slots: [{
-      startTime: String,
-      endTime: String,
-      isBooked: { type: Boolean, default: false }
+      slotNumber: String,
+      timing: String
     }]
   });
+  
   
 
 const Station = mongoose.model('Station', stationSchema, 'stations');
@@ -55,7 +56,7 @@ app.use(session({
   secret: 'secretkey',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: false }  // Set secure: true in production with HTTPS
+  cookie: { secure: false } 
 }));
 
 app.post('/register', async (req, res) => {

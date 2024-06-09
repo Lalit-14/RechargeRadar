@@ -1,7 +1,9 @@
-.contact_container{
+.contact_container {
     font-family: 'Arsenal';
     color: #FFFFFF;
     font-size: 23px;
-    line-height: 0.2;
-    word-spacing: 0.5em;
-}
+    line-height: 1.5;
+    display: flex;
+    left: 6%;
+  }
+  
