@@ -8,9 +8,7 @@ const Landing = () => {
         <div className='nav'>
             <Navbar />
         </div>
-        <div id='contact'>
-          <Contact />
-        </div>
+        
         <div className='image'>
         <img src="./assets/car.jpg" alt="Car" />
         <div className='text'>
@@ -19,6 +17,9 @@ const Landing = () => {
         <p>Radiate.</p>
         </div>
         <div className='line'><p>While your vehicle Recharges, you can Rejuvenate yourself at Recharge Radar and Radiate your energy to the universe.</p></div>
+        </div>
+        <div id='contact' className='contact_container'>
+          <Contact />
         </div>
     </div>
   )
