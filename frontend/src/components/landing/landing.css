@@ -34,7 +34,7 @@
 .contact_container{
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     width: 70%;
     margin-top: 20px;
     bottom: -10%;
