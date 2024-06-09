@@ -18,7 +18,7 @@ const Login = () => {
       });
       if (response.status === 200) {
         localStorage.setItem('isLoggedIn', true);
-        navigate('/dash');
+        navigate('/book');
       } else {
         setError('Invalid email or password');
       }

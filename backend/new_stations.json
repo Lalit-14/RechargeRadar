@@ -12,7 +12,7 @@
       "logo":"6.webp",
       "status":"working",
       "slots":{
-        "slot 1": "1pm-2pm",
+        "slot 1": "10am-12pm",
         "slot 2": "2pm-5pm"
       }
     },
@@ -26,7 +26,12 @@
         "coordinates": [17.41438550269109, 78.40767502391513]
       },
       "image":"station.jpeg",
-      "logo":"6.webp"
+      "logo":"6.webp",
+      "status":"working",
+      "slots":{
+        "slot 1": "7am-12pm",
+        "slot 2": "2pm-6pm"
+      }
     },
     {
       "area": "Jubilee Hills",
@@ -38,7 +43,12 @@
         "coordinates": [17.424326902681905, 78.43059468746083]
       },
       "image":"8.jpg",
-      "logo":"6.webp"
+      "logo":"6.webp",
+      "status":"non-working",
+      "slots":{
+        "slot 1": "9am-11am",
+        "slot 2": "3pm-8pm"
+      }
     },
     {
       "area": "Gachibowli",
@@ -50,7 +60,12 @@
         "coordinates": [17.418646051944094, 78.34747151411794]
       },
       "image":"charging.png",
-      "logo":"6.webp"
+      "logo":"6.webp",
+      "status":"working",
+      "slots":{
+        "slot 1": "8am-10am",
+        "slot 2": "1pm-4pm"
+      }
     },
     {
       "area": "Gachibowli",
@@ -62,7 +77,12 @@
         "coordinates": [17.423018345065525, 78.34794845773908]
       },
       "image":"neon.jpeg",
-      "logo":"6.webp"
+      "logo":"6.webp",
+      "status":"non-working",
+      "slots":{
+        "slot 1": "9am-12pm",
+        "slot 2": "4pm-7pm"
+      }
     },
     {
       "area": "Gachibowli",
@@ -74,7 +94,12 @@
         "coordinates": [17.44551011356914, 78.35586694110584]
       },
       "image":"green.webp",
-      "logo":"6.webp"
+      "logo":"6.webp",
+      "status":"working",
+      "slots":{
+        "slot 1": "10am-11am",
+        "slot 2": "3pm-6pm"
+      }
     },
     {
       "area": "Begumpet",
@@ -86,7 +111,12 @@
         "coordinates": [17.43701183454821, 78.45499910949275]
       },
       "image":"4.jpg",
-      "logo":"6.webp"
+      "logo":"6.webp",
+      "status":"working",
+      "slots":{
+        "slot 1": "9am-10am",
+        "slot 2": "1pm-4pm"
+      }
     },
     {
       "area": "Begumpet",
@@ -98,7 +128,12 @@
         "coordinates": [17.444635325632152, 78.46205721193365]
       },
       "image":"9.jpeg",
-      "logo":"6.webp"
+      "logo":"6.webp",
+      "status":"non-working",
+      "slots":{
+        "slot 1": "10am-11am",
+        "slot 2": "2pm-5pm"
+      }
     },
     {
       "area": "Begumpet",
@@ -110,7 +145,12 @@
         "coordinates": [17.43793127786417, 78.45510533476089]
       },
       "image":"10.jpeg",
-      "logo":"6.webp"
+      "logo":"6.webp",
+      "status":"working",
+      "slots":{
+        "slot 1": "10am-1pm",
+        "slot 2": "3pm-6pm"
+      }
     },
     {
       "area": "Hitech City",
@@ -122,7 +162,12 @@
         "coordinates": [17.454140501457704, 78.38511330473978]
       },
       "image":"hyun.avif",
-      "logo":"6.webp"
+      "logo":"6.webp",
+      "status":"non-working",
+      "slots":{
+        "slot 1": "9am-12pm",
+        "slot 2": "4pm-7pm"
+      }
     },
     {
       "area": "Hitech City",
@@ -134,7 +179,12 @@
         "coordinates": [17.44813097548204, 78.38453410072067]
       },
       "image":"clean.jpeg",
-      "logo":"6.webp"
+      "logo":"6.webp",
+      "status":"working",
+      "slots":{
+        "slot 1": "6am-11am",
+        "slot 2": "2pm-5pm"
+      }
     },
     {
       "area": "Hitech City",
@@ -146,7 +196,12 @@
         "coordinates": [17.45293244223992, 78.38050997178968]
       },
       "image":"green.webp",
-      "logo":"6.webp"
+      "logo":"6.webp",
+      "status":"working",
+      "slots":{
+        "slot 1": "9am-12pm",
+        "slot 2": "1pm-9pm"
+      }
     },
     {
       "area": "Miyapur",
@@ -158,31 +213,11 @@
         "coordinates": [17.4984638015376, 78.3813097914914]
       },
       "image":"3.jpeg",
-      "logo":"6.webp"
-    },
-    {
-      "area": "Miyapur",
-      "name": "Miyapur Metro Parking",
-      "address": "Nadigada Tanda, Miyapur, Hyderabad, Telangana 500049",
-      "contact": "+91 40 2340 0699",
-      "location": {
-        "type": "Point",
-        "coordinates": [17.496931203672435, 78.37111630329802]
-      },
-      "image":"5.jpg",
-      "logo":"6.webp"
-    },
-    {
-      "area": "Miyapur",
-      "name": "Charge And Drive Charging Station",
-      "address": "Survey No. 98, Miyapur Main Rd, Madeenaguda, Hyderabad, Telangana 500133",
-      "contact": "+46 20 46 00 46",
-      "location": {
-        "type": "Point",
-        "coordinates": [17.495069469417185, 78.33650363925875]
-      },
-      "image":"station.jpeg",
-      "logo":"6.webp"
+      "logo":"6.webp",
+      "status":"non-working",
+      "slots":{
+        "slot 1": "8am-9am",
+        "slot 2": "1pm-4pm"
+      }
     }
-  ]
-  
+]

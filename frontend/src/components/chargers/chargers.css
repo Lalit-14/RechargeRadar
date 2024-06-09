@@ -1,10 +1,11 @@
-/* Chargers.css */
-
-.container {
+.chargers_container {
     background-color: #060F15;
     color: #ffffff;
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top:10%;
   }
   
   .map {
@@ -16,5 +17,39 @@
     padding: 20px;
     background-color: #254EBA;
     color: #ffffff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 10;
+  }
+  
+  .search-input {
+    padding: 10px;
+    margin: 10px;
+    width: calc(100% - 40px);
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .stations-list {
+    max-height: 20vh;
+    overflow-y: auto;
+    background-color: #254EBA;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+  
+  .station-item {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  .station-item:hover {
+    background-color: #1d3c8d;
   }
   

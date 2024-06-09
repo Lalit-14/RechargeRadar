@@ -6,6 +6,7 @@
     background-color: #060F15;
     color: #FFFFFF;
     font-family: 'Arsenal';
+    margin-top:10%;
   }
 .h2{
   
@@ -41,6 +42,14 @@
   }
   
   .booking-form button:hover {
+    background-color: #1E3F9A;
+  }
+  
+  .confirmation-message {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     background-color: #1E3F9A;
   }
   

@@ -3,6 +3,7 @@ import Popup from '../popup/Popup';
 import './dash.css';
 import axios from 'axios';
 import Navbar from '../navbar/Navbar';
+import { useNavigate } from 'react-router-dom';
 
 const Dash = () => {
   const [data, setData] = useState([]);
@@ -10,6 +11,7 @@ const Dash = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
   const [searchArea, setSearchArea] = useState('');
+  const navigate =useNavigate();
 
   useEffect(() => {
     axios.get("http://localhost:8000/stations")
@@ -34,6 +36,10 @@ const Dash = () => {
     setFilteredData(filtered);
   }
 
+  const handleMapClick = () => {
+    navigate("/chargers")
+  }
+
   // Extract unique area names for datalist
   const uniqueAreaNames = [...new Set(data.map(station => station.area))];
 
@@ -43,6 +49,7 @@ const Dash = () => {
             <Navbar />
         </div>
         <div className="search-container">
+          <button className='map_button' onClick={handleMapClick}>Locate on Maps</button>
           <input 
             type="text" 
             value={searchArea} 
@@ -56,6 +63,7 @@ const Dash = () => {
             ))}
           </datalist>
           <button onClick={handleSearchSubmit}>Search</button>
+
         </div>
         <div className='data'>
       {filteredData.map((card, idx) => (

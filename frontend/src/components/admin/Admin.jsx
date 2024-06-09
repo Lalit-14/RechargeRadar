@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./admin.css";
+import Navbar from '../navbar/Navbar';
 
 const Admin = () => {
   const [stations, setStations] = useState([]);
@@ -60,6 +61,10 @@ const Admin = () => {
   };
 
   return (
+    <div className='outer_container'>
+      <div className='nav'>
+        <Navbar />
+      </div>
     <div className='admin_container'>
       <h1>Admin Page</h1>
 
@@ -85,6 +90,7 @@ const Admin = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
