@@ -5,7 +5,11 @@
     padding: 20px;
     background-color: #060F15;
     color: #FFFFFF;
+    font-family: 'Arsenal';
   }
+.h2{
+  
+}
   
   .booking-form {
     display: flex;

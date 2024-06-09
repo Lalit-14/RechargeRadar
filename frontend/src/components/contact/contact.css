@@ -1,3 +1,7 @@
 .contact_container{
-    color:white;
+    font-family: 'Arsenal';
+    color: #FFFFFF;
+    font-size: 23px;
+    line-height: 0.2;
+    word-spacing: 0.5em;
 }

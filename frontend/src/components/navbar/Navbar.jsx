@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className='nav_links'>
             <a href='/dash'>Find a Charger</a>
             <a href='/admin'>For Business</a>
-            <a href='/contact-us'>Contact Us</a>
+            <a href='/#contact'>Contact Us</a>
             <a href='/login'>Book</a>
         </div>
     </div>
