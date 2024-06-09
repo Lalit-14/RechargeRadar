@@ -8,6 +8,7 @@ import Admin from "./components/admin/Admin"
 import Navbar from "./components/navbar/Navbar"
 import Dash from "./components/dash/Dash"
 import Chargers from "./components/chargers/Chargers"
+import Contact from "./components/contact/Contact"
 const App = () => {
   return (
     <Router>
@@ -19,8 +20,8 @@ const App = () => {
           <Route path="/book" element={<Book/>}/>
           <Route path="/admin" element={<Admin/>}/>
           <Route path="/map" element={<Map/>}/>
-          <Route path="dash" element={<Dash/>}/>
-          <Route path="chargers" element={<Chargers/>}/>
+          <Route path="/dash" element={<Dash/>}/>
+          <Route path="/chargers" element={<Chargers/>}/>
         </Routes>
       </div>
     </Router>
