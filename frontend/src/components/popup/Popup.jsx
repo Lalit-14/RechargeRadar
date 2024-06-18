@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 const Popup = ({ onClose, data }) => {
   const navigate = useNavigate();
   const handleBook=()=>{
-    navigate('/book',{state:{station:data}});
+    navigate('/login',{state:{station:data}});
   }
   return (
     <div className="popup-container">

@@ -13,8 +13,9 @@ const center = {
 };
 
 const Map = () => {
+  const apiKey = import.meta.env.VITE_REACT_MAPS_KEY;
   return (
-    <LoadScript googleMapsApiKey="AIzaSyBjUcM5mgA2y7eXso4V2Ar8QciVRP8VLHs">
+    <LoadScript googleMapsApiKey={apiKey}>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
 
       </GoogleMap>

@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const session = require('express-session');
+const dotenv = require('dotenv').config();
 
 const app = express();
 const port = 8000;
@@ -9,7 +10,7 @@ const port = 8000;
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://aadi:mongopass123@cluster0.lwjxmia.mongodb.net/RechargeRadar?retryWrites=true&w=majority")
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("Connected to MongoDB"))
   .catch(err => console.error("Error connecting to MongoDB:", err));
 

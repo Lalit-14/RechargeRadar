@@ -9,6 +9,7 @@ const Chargers = () => {
   const [filteredStations, setFilteredStations] = useState([]);
   const [selectedStation, setSelectedStation] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const apiKey = import.meta.env.VITE_REACT_MAPS_KEY
 
   useEffect(() => {
     fetchStations();
@@ -46,7 +47,7 @@ const Chargers = () => {
   };
 
   const { isLoaded, loadError } = useJsApiLoader({
-    googleMapsApiKey: 'AIzaSyBjUcM5mgA2y7eXso4V2Ar8QciVRP8VLHs',
+    googleMapsApiKey: apiKey,
   });
 
   if (loadError) {
